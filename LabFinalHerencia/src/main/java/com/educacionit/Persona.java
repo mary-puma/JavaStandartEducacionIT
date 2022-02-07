@@ -1,6 +1,6 @@
 package com.educacionit;
 
-public class Persona {
+public abstract class Persona implements IPersistencia,IDireccionesIP {
 
     private static int contador = 0;
     private int id;
@@ -16,7 +16,7 @@ public class Persona {
         this.nombre = nombre;
         this.apellido = apellido;
         this.documento = documento;
-        this.edad =edad;
+        this.edad = edad;
 
     }
 
@@ -33,6 +33,12 @@ public class Persona {
 
     public static int getContador() {
         return contador;
+    }
+    public void mostrarConstantesDeLaInterface(){
+        System.out.println(IPBASEDEDATO);
+        System.out.println(IPSERVICIODOS);
+        System.out.println(IPSERVICIOUNO);
+        System.out.println(IPSERVICIOTRES);
     }
 }
 

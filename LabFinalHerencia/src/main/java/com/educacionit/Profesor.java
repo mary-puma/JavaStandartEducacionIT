@@ -16,4 +16,19 @@ public class Profesor extends Persona{
     public void setSueldo(int sueldo) {
         this.sueldo = sueldo;
     }
+
+    @Override
+    public void guardar() {
+        System.out.println("se guardo exitosamente el profesor en la base de datos");
+    }
+
+    @Override
+    public void eliminar() {
+        System.out.println("se borro exitosamente el profesor en la base de datos");
+    }
+
+    @Override
+    public void modificar() {
+        System.out.println("se modifico exitosamente el profesor en la base de datos");
+    }
 }

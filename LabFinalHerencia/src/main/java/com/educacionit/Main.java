@@ -28,6 +28,25 @@ public class Main {
         cantidad = teclado.nextInt();
         alumnos = new Alumno[cantidad];
 
+        // probamos las interfaces (metodo abtractos implementados en la clase hijas y
+        // Constantes)
+
+        Profesor profesor = new Profesor("pepe", "rodriguez",new Documento("DNI", 45789),(byte) 25,2000);
+        profesor.guardar();
+        profesor.modificar();
+        profesor.eliminar();
+        profesor.mostrarConstantesDeLaInterface();
+
+        String[] cursos2 = new String[2];
+        cursos2[0] = "analisis";
+        cursos2[1] = "algebra";
+        Alumno alumno = new Alumno("jose", "martinez", new Documento("DNI", 8888), (byte) 30,cursos2);
+
+        alumno.guardar();
+        alumno.modificar();
+        alumno.eliminar();
+        alumno.mostrarConstantesDeLaInterface();
+
 
         for (int i=0;i<alumnos.length;i++){
             //no puedo usar los setter y getters porq necesitaria crear el contructor vacio en la clase alumno y el ejercicio no pide usar este constructor
@@ -54,8 +73,8 @@ public class Main {
                 cursos[j] = teclado.next();
             }
 
-            Alumno alumno = new Alumno(nombre,apellido,documento,edad,cursos);
-            alumnos[i] = alumno;
+            alumnos[i] = new Alumno(nombre,apellido,documento,edad,cursos);
+
 
         }
         for (int i = 0; i < alumnos.length; i++) {
