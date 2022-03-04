@@ -7,8 +7,9 @@ public class Main {
 
         try {
             System.out.println(cal.calculo(4,0));
-        }catch (CalculoException e){
+        }catch (CalculadoraException e){
             System.out.println(e.getMessage());
+            e.printStackTrace();
         }
     }
 }
