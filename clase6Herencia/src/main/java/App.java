@@ -5,7 +5,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        Persona p1 = new Persona("mary","lopez",123456798,"mary@aa.com","azul");
+        Persona p1 = new Persona("mary", "lopez", 123456798, "mary@aa.com", "azul");
         Persona p2 = new Persona();
         p2.setNombre("belen");
         p2.setApellido("ramirez");
@@ -23,10 +23,9 @@ public class App {
         d1.iniciar();
         System.out.println(d1.getApellido());
         System.out.println(d1.toString());
-        Docente d2 = new Docente("mauro","perez",789522,"perez@tets.com","buenos aires",1,"ingenieria");
+        Docente d2 = new Docente("mauro", "perez", 789522, "perez@tets.com", "buenos aires", 1, "ingenieria");
         System.out.println(d2.toString());
 
-        //sobrecarga del metodo iniciar
         d2.iniciar();
     }
 }
