@@ -19,6 +19,8 @@ public abstract class Persona {
 
     public abstract String mostrarNombreYTipoPersona();
 
+    // sobreescribimos el equals porque tenemos que especificar cuando se consideran iguales estos objetos
+    //en los envoltorios como String no hace falta sobrescibir este metodo
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
