@@ -1,4 +1,4 @@
-package com.educacionit;
+package com.educacionit.ejercicio1;
 
 import java.io.BufferedReader;
 import java.io.File;
